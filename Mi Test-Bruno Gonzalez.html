@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script> 
+ //Se inicia aqui y se pone "script" para indicar que el lenguaje a utilizar es de JavaScript
+   
+   //Se declaran variables
+   var cuest=1; //Le doy el valor "1" para que el "switch" comiense desde "case 1"
+   var pregunta;
+   var respuesta1="Bruno";
+   var respuesta2="Gonzalez";
+   var respuesta3="Climaco";
+   var respuesta4="18";
+   var respuesta5="3";
+   var respuesta6="Julio";
+   var respuesta7="Rojo";
+   var respuesta8="Zumpango";
+   var respuesta9="Ingenieria en Software";
+   var respuesta10="UPT";
+   var puntaje=0; //Le doy el valor de "0" para que vaya sumando las respuestas correctas obtenidas
+
+   //Mensaje de bienvenida
+   alert("Bienvenido a mi Test Personal\nPor favor, responda estas 10 preguntas\nRecuerda usar mayusculas");
+
+   //Se inicia el cuestionario
+   switch(cuest)
+   {
+       case 1: //El switch va por diferentes opciones, en este caso "case 1" es lo mismo a "pregunta 1"
+           pregunta=prompt("¿Cual es mi nombre?");//Se usa "prompt" para que el usuario le asigne un valor a "pregunta"
+           //Se usa "if/else" para arrojar dos resultados posibles
+           if(pregunta==respuesta1) //Si la respuesta ingresada es igual a la respuesta correcta entonces:
+           {
+               puntaje=puntaje+1
+               console.log("1. Correcto"); //Se va a arrojar el mensaje "Correcto" y se va a sumar 1 punto a la variable "puntaje"
+           }
+           else //Si la respuesta ingresada no es igual a la respuesta correcta entonces:
+           {
+               console.log("1. Incorrecto, la respuesta es: "+respuesta1); //Se arroja que la respuesta es incorrecta, ademas de mostrar la respuesta correcta
+           }
+           //Y asi se repite el proceso hasta que se encuentre un "break"
+
+        case 2:
+           pregunta=prompt("¿Cual es mi primer apellido?");
+           if(pregunta==respuesta2)
+           {
+                puntaje=puntaje+1
+                console.log("2. Correcto");
+           }
+           else
+           {
+                console.log("2. Incorrecto, la respuesta es: "+respuesta2);
+           }
+           
+        case 3:
+           pregunta=prompt("¿Cual es mi segundo apellido?");
+           if(pregunta==respuesta3)
+           {
+                puntaje=puntaje+1
+                console.log("3. Correcto");
+
+           }
+           else
+           {
+                console.log("3. Incorrecto, la respuesta es: "+respuesta3);
+           }
+
+        case 4:
+           pregunta=prompt("¿Cual es mi edad?");
+           if(pregunta==respuesta4)
+           {
+                puntaje=puntaje+1
+                console.log("4. Correcto");
+           }
+           else
+           {
+                console.log("4. Incorrecto, la respuesta es: "+respuesta4);
+           }
+
+        case 5:
+           pregunta=prompt("¿Que dia cumplo años?");
+           if(pregunta==respuesta5)
+           {
+                puntaje=puntaje+1
+                console.log("5. Correcto");
+           }
+           else
+           {
+                console.log("5. Incorrecto, la respuesta es: "+respuesta5);
+           }
+
+        case 6:
+           pregunta=prompt("¿Que mes cumplo años?");
+           if(pregunta==respuesta6)
+           {
+                puntaje=puntaje+1
+                console.log("6. Correcto");
+           }
+           else
+           {
+                console.log("6. Incorrecto, la respuesta es: "+respuesta6);
+           }
+
+        case 7:
+           pregunta=prompt("¿Cual es mi color favorito?");
+           if(pregunta==respuesta7)
+           {
+                puntaje=puntaje+1
+                console.log("7. Correcto");
+           }
+           else
+           {
+                console.log("7. Incorrecto, la respuesta es: "+respuesta7);
+           }
+
+        case 8:
+           pregunta=prompt("¿Donde vivo?");
+           if(pregunta==respuesta8)
+           {
+                puntaje=puntaje+1
+                console.log("8. Correcto");
+           }
+           else
+           {
+                console.log("8. Incorrecto, la respuesta es: "+respuesta8);
+           }
+
+        case 9:
+           pregunta=prompt("¿Que estoy estudiando?");
+           if(pregunta==respuesta9)
+           {
+                puntaje=puntaje+1
+                console.log("9. Correcto");
+           }
+           else
+           {
+                console.log("9. Incorrecto, la respuesta es: "+respuesta9);
+           }
+
+        case 10:
+           pregunta=prompt("¿En que escuela voy?");
+           if(pregunta==respuesta10)
+           {
+                puntaje=puntaje+1
+                console.log("10. Correcto");
+           }
+           else
+           {
+                console.log("10. Incorrecto, la respuesta es: "+respuesta10);
+           }
+        break; //Al llegar al break la estructura "switch" se detiene, normalmente se usa en cada "case" pero solamente puse uno hasta el final para que se ejecitaran todos los "case"
+   }
+
+   console.log("¡¡MUCHAS GRACIAS!!\nObtuviste "+puntaje+" respuestas correctas"); //Al final se arroja un mensaje de agradecimiento, ademas, se muestra el puntaje obtenido con la variable "puntaje", la cual estuvo juntando todos los puntos obtenidos
+
+
+ //Fin del "script"
+</script>
+</body>
+</html>
