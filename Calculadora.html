@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    var op;
+    var n1;
+    var n2;
+    var result;
+
+    n1=prompt("¡¡HOLA!!\nPor favor ingrese el primer numero");
+    n2=prompt("Por favor ingrese el segundo numero");
+
+    op=prompt("¿Que operacion decea realizar?\n1. Suma\n2. Resta\n3. Multiplicacion\n4. Divicion");
+
+    switch(op)
+    {
+        case 1:function suma(n1,n2)
+        {
+            result=n1+n2;
+            return result;
+        }
+        break;
+
+        case 2:function resta(n1,n2)
+        {
+            result=n1-n2;
+            return result;
+        }
+        break;
+
+        case 3:function multiplicacion(n1,n2)
+        {
+            result=n1*n2;
+            return result;
+        }
+        break;
+
+        case 4:function divicion(n1,n2)
+        {
+            result=n1/n2;
+            return result;
+        }
+        break;
+    }
+
+</script>
+</body>
+</html>
